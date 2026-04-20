@@ -7,6 +7,9 @@ draft: false
 
 # Frida相关api
 
+> 本文主要保留旧笔记中的常用写法，其中部分 native/so 相关示例基于 **Frida 16 及更早时期** 的 API 习惯。  
+> 如果你现在使用的是 **Frida 17+**，建议结合这篇新笔记一起看：[Frida常用API记录(Frida 17+)](/blog/frida-api-notes-frida17/)。
+
 ## Java层
 
 ### 静态方法和实例方法的Hook
@@ -146,4 +149,3 @@ for (var i = 0; i < overloadsArr.length; i++) {
     }
 }
 ```
-

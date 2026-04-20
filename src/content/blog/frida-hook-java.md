@@ -7,6 +7,9 @@ draft: false
 
 # Frida Hook实现APP关键代码快速定位(Java层)
 
+> 本文主要保留旧笔记中的写法和定位思路，核心 Java Hook 用法今天仍然可参考。  
+> 如果你现在使用的是 **Frida 17+**，建议结合这篇新笔记一起看：[Frida Hook实现APP关键代码快速定位(Java层)(Frida 17+)](/blog/frida-hook-java-frida17/)。
+
 ## HashMap的put方法
 
 ```javascript
@@ -294,4 +297,3 @@ okhttp_Builder.addHeader.implementation = function (a, b) {
 >
 > 安卓退出进程的方式
 >
-

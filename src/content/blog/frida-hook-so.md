@@ -7,6 +7,9 @@ draft: false
 
 # Frida Hook so
 
+> 本文主要保留旧笔记中的写法和思路，其中不少示例基于 **Frida 16 及更早时期** 常见的 `Module.*` 静态 API。  
+> 如果你现在使用的是 **Frida 17+**，建议优先结合这篇新笔记阅读：[Frida Hook so(Frida 17+)](/blog/frida-hook-so-frida17/)。
+
 ## 枚举各种
 
 ### 1. 枚举导入表
@@ -775,4 +778,3 @@ function set_read_write_break(){
 
 #### `Process.setExceptionHandler` 的作用
 `Process.setExceptionHandler` 用于设置一个全局的异常处理器，当程序执行过程中发生异常时，该处理器会被调用。通过这种方式，可以捕获内存访问违规等异常，进行调试或逆向分析。
-
